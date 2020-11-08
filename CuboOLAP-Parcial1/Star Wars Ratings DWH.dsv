@@ -1,0 +1,256 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="13f06d2d-a6a0-4f1f-85b7-62f643aa83e4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Star Wars Ratings DWH</ID>
+  <Name>Star Wars Ratings DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Star Wars Ratings DWH</DataSourceID>
+  <Schema>
+    <xs:schema id="Star_x0020_Wars_x0020_Ratings_x0020_DWH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Star_x0020_Wars_x0020_Ratings_x0020_DWH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="91a16a9a-7c29-4066-8591-d6c403a607f2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Fact_SurveyMovies" msprop:design-time-name="ade0ec4a-fadf-4cb4-a0c9-f69c931d62a6" msprop:DbTableName="SurveyMovies" msprop:FriendlyName="SurveyMovies" msprop:DbSchemaName="Fact" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SurveyID" msprop:design-time-name="43948b1c-8d72-4ddd-b8f3-cc35f83c2c26" msprop:DbColumnName="SurveyID" msprop:FriendlyName="SurveyID" type="xs:int" />
+                  <xs:element name="PersonID" msprop:design-time-name="e133c904-3b58-44b5-a0ab-965df64ef56e" msprop:DbColumnName="PersonID" msprop:FriendlyName="PersonID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FilmID" msprop:design-time-name="b3d85262-a3e3-4c10-8ee3-483485c71497" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SK_Personaje" msprop:design-time-name="9a3dd263-eea2-48c3-a073-ecb2efc832e1" msprop:DbColumnName="SK_Personaje" msprop:FriendlyName="SK_Personaje" type="xs:int" minOccurs="0" />
+                  <xs:element name="SK_Film" msprop:design-time-name="6c092da9-514e-40c3-a392-2e9524f094c0" msprop:DbColumnName="SK_Film" msprop:FriendlyName="SK_Film" type="xs:int" minOccurs="0" />
+                  <xs:element name="Rating" msprop:design-time-name="77faa946-2f2b-470b-8316-18c4e0f73960" msprop:DbColumnName="Rating" msprop:FriendlyName="Rating" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="FechaSurvey" msprop:design-time-name="86187425-3c5c-4b83-8788-fde0dc7db488" msprop:DbColumnName="FechaSurvey" msprop:FriendlyName="FechaSurvey" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_Fecha" msprop:design-time-name="69550587-d12b-42c0-a366-177024d23e80" msprop:DbTableName="Fecha" msprop:FriendlyName="Fecha" msprop:DbSchemaName="Dimension" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:design-time-name="cea92e43-4a9e-4c04-8edc-194106fc9815" msprop:DbColumnName="DateKey" msprop:FriendlyName="DateKey" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="938e5db0-7160-49c0-a799-10d4b869a277" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Day" msprop:design-time-name="2fd3f685-4862-4eaf-a2f7-7f17aa02de3d" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:unsignedByte" />
+                  <xs:element name="DaySuffix" msprop:design-time-name="f014711a-314b-4af8-96aa-371d17256f78" msprop:DbColumnName="DaySuffix" msprop:FriendlyName="DaySuffix">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Weekday" msprop:design-time-name="1417bb52-e52e-4640-9b56-91c3c02dc640" msprop:DbColumnName="Weekday" msprop:FriendlyName="Weekday" type="xs:unsignedByte" />
+                  <xs:element name="WeekDayName" msprop:design-time-name="2cd99808-7dc1-46bd-92ce-ff989cb4dbb8" msprop:DbColumnName="WeekDayName" msprop:FriendlyName="WeekDayName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WeekDayName_Short" msprop:design-time-name="4799983f-b761-44b5-90d2-c6ef5e8c3388" msprop:DbColumnName="WeekDayName_Short" msprop:FriendlyName="WeekDayName_Short">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WeekDayName_FirstLetter" msprop:design-time-name="6a44b741-5a87-4a94-8176-da635ee806fe" msprop:DbColumnName="WeekDayName_FirstLetter" msprop:FriendlyName="WeekDayName_FirstLetter">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DOWInMonth" msprop:design-time-name="963466cb-3598-4e7b-8605-b7b0036753bd" msprop:DbColumnName="DOWInMonth" msprop:FriendlyName="DOWInMonth" type="xs:unsignedByte" />
+                  <xs:element name="DayOfYear" msprop:design-time-name="4461dcdb-94a5-462f-ae58-295a711a71e4" msprop:DbColumnName="DayOfYear" msprop:FriendlyName="DayOfYear" type="xs:short" />
+                  <xs:element name="WeekOfMonth" msprop:design-time-name="36f3291e-e64f-49e9-80cd-56bbad444193" msprop:DbColumnName="WeekOfMonth" msprop:FriendlyName="WeekOfMonth" type="xs:unsignedByte" />
+                  <xs:element name="WeekOfYear" msprop:design-time-name="00020773-8764-4957-bdd7-f27eac4219ff" msprop:DbColumnName="WeekOfYear" msprop:FriendlyName="WeekOfYear" type="xs:unsignedByte" />
+                  <xs:element name="Month" msprop:design-time-name="3ca01f69-9861-4dde-a14a-9539995bf709" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:unsignedByte" />
+                  <xs:element name="MonthName" msprop:design-time-name="a57e7868-5838-4d5c-831e-2a4304335792" msprop:DbColumnName="MonthName" msprop:FriendlyName="MonthName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthName_Short" msprop:design-time-name="06fcb7f3-9058-4b90-b2e4-eb3d7112b528" msprop:DbColumnName="MonthName_Short" msprop:FriendlyName="MonthName_Short">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthName_FirstLetter" msprop:design-time-name="0e23c426-7619-4bf5-be5b-e65f75509341" msprop:DbColumnName="MonthName_FirstLetter" msprop:FriendlyName="MonthName_FirstLetter">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msprop:design-time-name="e3daf694-c443-4ed7-a6c2-da2d52aa05b1" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:unsignedByte" />
+                  <xs:element name="QuarterName" msprop:design-time-name="7e5a6a2c-365a-4fdc-a1af-3a907b05e256" msprop:DbColumnName="QuarterName" msprop:FriendlyName="QuarterName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:design-time-name="ff773b4f-4c9a-48bc-962d-b21d8b95f06a" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                  <xs:element name="MMYYYY" msprop:design-time-name="84f00cad-4598-4ac5-94ef-65b8e8fab9e8" msprop:DbColumnName="MMYYYY" msprop:FriendlyName="MMYYYY">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthYear" msprop:design-time-name="0fd2f955-591a-4b8a-b686-33c7c8579a21" msprop:DbColumnName="MonthYear" msprop:FriendlyName="MonthYear">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="7" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsWeekend" msprop:design-time-name="e5eceb33-326c-4fdd-93ef-e7033b9eed03" msprop:DbColumnName="IsWeekend" msprop:FriendlyName="IsWeekend" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_film" msprop:design-time-name="187479ca-000d-4931-bcb1-aa8916510df3" msprop:DbTableName="film" msprop:FriendlyName="film" msprop:DbSchemaName="Dimension" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_Film" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="db35a6f5-43b1-400a-a65c-5a8574fb1574" msprop:DbColumnName="SK_Film" msprop:FriendlyName="SK_Film" type="xs:int" />
+                  <xs:element name="FilmID" msprop:design-time-name="69924d1b-d5ad-4a55-be44-4c2f974aa1bf" msprop:DbColumnName="FilmID" msprop:FriendlyName="FilmID" type="xs:int" minOccurs="0" />
+                  <xs:element name="NOmbreFilm" msprop:design-time-name="dd48569d-1733-41fa-9d18-9c2358c96612" msprop:DbColumnName="NOmbreFilm" msprop:FriendlyName="NOmbreFilm" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Productor" msprop:design-time-name="1927dacb-03e0-45fe-bf28-c4d46eeb5dd5" msprop:DbColumnName="Productor" msprop:FriendlyName="Productor" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Director" msprop:design-time-name="859cae6d-2c3b-49cb-ad72-afd1d9ae29a8" msprop:DbColumnName="Director" msprop:FriendlyName="Director" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Genero" msprop:design-time-name="0da25428-9469-47fd-b022-3a7669b88392" msprop:DbColumnName="Genero" msprop:FriendlyName="Genero" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Dimension_Personaje" msprop:design-time-name="41c50e36-89d5-4339-99e7-18574cbaea9b" msprop:DbTableName="Personaje" msprop:FriendlyName="Personaje" msprop:DbSchemaName="Dimension" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_Personaje" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c750b464-bb86-4932-8403-999b0d587296" msprop:DbColumnName="SK_Personaje" msprop:FriendlyName="SK_Personaje" type="xs:int" />
+                  <xs:element name="PersonID" msprop:design-time-name="a969ce03-7e53-4d04-afbe-575829116dd3" msprop:DbColumnName="PersonID" msprop:FriendlyName="PersonID" type="xs:int" minOccurs="0" />
+                  <xs:element name="HomePlanetID" msprop:design-time-name="8c13e277-b22d-4ffb-b0b7-610927d5e206" msprop:DbColumnName="HomePlanetID" msprop:FriendlyName="HomePlanetID" type="xs:int" minOccurs="0" />
+                  <xs:element name="NombrePersona" msprop:design-time-name="ea885ea8-e000-4b67-bad9-b8f6fb9a8c6d" msprop:DbColumnName="NombrePersona" msprop:FriendlyName="NombrePersona" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsForceUser" msprop:design-time-name="42251f9f-9763-4950-a814-4dfd89555797" msprop:DbColumnName="IsForceUser" msprop:FriendlyName="IsForceUser" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NombreLightSaber" msprop:design-time-name="ec591483-10bf-447d-a12b-2faa1c3e7d81" msprop:DbColumnName="NombreLightSaber" msprop:FriendlyName="NombreLightSaber" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NombrePlanetaCasa" msprop:design-time-name="992ef74f-e6db-443c-84c7-c84b99c805fb" msprop:DbColumnName="NombrePlanetaCasa" msprop:FriendlyName="NombrePlanetaCasa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Fact_SurveyMovies" />
+          <xs:field xpath="SurveyID" />
+        </xs:unique>
+        <xs:unique name="Dimension_Fecha_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_Fecha" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:unique name="Dimension_film_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_film" />
+          <xs:field xpath="SK_Film" />
+        </xs:unique>
+        <xs:unique name="Dimension_Personaje_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Dimension_Personaje" />
+          <xs:field xpath="SK_Personaje" />
+        </xs:unique>
+        <xs:keyref name="FK__SurveyMov__Fecha__2C3393D0" refer="Dimension_Fecha_Constraint1">
+          <xs:selector xpath=".//Fact_SurveyMovies" />
+          <xs:field xpath="FechaSurvey" />
+        </xs:keyref>
+        <xs:keyref name="FK__SurveyMov__SK_Pe__2A4B4B5E" refer="Dimension_Personaje_Constraint1">
+          <xs:selector xpath=".//Fact_SurveyMovies" />
+          <xs:field xpath="SK_Personaje" />
+        </xs:keyref>
+        <xs:keyref name="FK__SurveyMov__SK_Fi__2B3F6F97" refer="Dimension_film_Constraint1">
+          <xs:selector xpath=".//Fact_SurveyMovies" />
+          <xs:field xpath="SK_Film" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Star_x0020_Wars_x0020_Ratings_x0020_DWH xmlns="" />
+  </Schema>
+</DataSourceView>
